@@ -10,18 +10,48 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+	
+		
 	</head>
 	<body class="is-preload">
+		
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/photo.jpg" alt="" /></a>
-					<h1>I am <strong> Roline Stapny Saldanha</strong>, <br />pursuing Masters in Computer Science at Texas A&M University, College Station.
-					<br />
-					</h1>
-				</div>
+					<h1>I am <strong> Roline Stapny Saldanha</strong>, <br />pursuing Masters in Computer Science at Texas A&M University, College Station.</h1>
+					</div>
+						
+							<h2>
+							<ul class="navbar-nav" style="list-style: none;" >
+
+							<li class="nav-item">
+								<a  href="#one" class="scrollLink">About Me </a>
+							</li>
+							<li>
+								<a  href="#two" class="scrollLink"); return false;">Projects</a>
+							</li>
+							<li>
+								<a href="#three" class="scrollLink">Skills</a>
+							</li>
+							<li>
+								<a href="#four" class="scrollLink">Other Experiences</a>
+							</li>
+							<li>
+								<a href="#five" class="scrollLink">Publications</a>
+							</li>
+							<li>
+								<a href="#six" class="scrollLink">Get in Touch</a>
+							</li>
+						</ol>
+					</h2>
+					
+					
+					
+				
 			</header>
+
 
 		<!-- Main -->
 			<div id="main">
@@ -31,7 +61,7 @@
 						<header class="major">
 							<h2>About me.</h2>
 						</header>
-						<p>I was born and brought up in Udupi district of Karnataka state in India. I have Bachelors in Engineering in Computer Science from VTU, India. Currently I am pursuing Masters in Computer Science at Texas A&M University, College Station.  </p>
+						<p>I was born and brought up in Udupi district of Karnataka state in India. I have obtained Bachelor of Engineering in Computer Science(9.56/10) from VTU, India. Currently I am pursuing Masters in Computer Science at Texas A&M University (4/4), College Station.  </p>
 						<p>
 							I grew up with my parents. I love music and have been a part of church choir from an young age. I have taken keyboard classes. I also like singing and gardening. Currently I am learning Ukulele during my free time.
 						</p>
@@ -44,6 +74,8 @@
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>-->
 					</section>
+
+					
 
 				<!-- Two -->
 					<section id="two">
@@ -86,8 +118,60 @@
 						</ul>
 					</section>
 
-				<!-- Three -->
+					<!-- Skills-->
+
 					<section id="three">
+						<h2>Skills</h2>
+						<ul >
+							<li>
+								<u style="color: black"> Languages: </u> Python, Java, C++, C, HTML, CSS, PHP, MySQL, Android, JavaScript.
+							</li>
+							<li>
+								<u style="color: black"> Other Skills: </u> Machine Learning(scikit learn, Numpy, Pandas, Tensorflow), Android Programming, GIT, Flask, AWS.
+							</li>
+							<li>
+								<u style="color: black"> Courses Taken: </u> Deep Learning, Artificial Intelligence, Distributed Systems and Cloud Computing(Spark basics), Information Storage and Retrieval, Analysis of Algorithms, Software Engineering, Big Data, Machine learning.
+							</li>
+
+						</ul>
+
+						
+					</section>
+
+					<section  id="four" >
+						<h2>Other Experience</h2>
+						<ul>
+							<li>
+								Finalist in TAMIDS Data Science Competition 2020.
+							</li>
+							<li>
+								Graduate Vice President of AWICS(Aggie Women in Computer Science club) for the year 2020-2021.
+							</li>
+							<li>
+								Project of the Year Award in Expro 2019:Won third best project of the year award in the Computer Science Department.
+							</li>
+							<li>
+								Completed the “Core Java with Android” Certification course by HPE Education Service.
+							</li>
+
+						</ul>
+
+					</section >
+
+					<section id="five">
+						<h2>Publications</h2>
+						<ul>
+							<li>
+								Sreekantha, D. K.,<u>Roline Stapny Saldanha</u>, Jotsna Gowda Krishnappa, Sripada G. Mehandale, Rodrigues Rhea Carmel Glen, and M. K. Prajna. "Predicting difficulties in Mask Ventilation using Machine Learning techniques." In 2019 IEEE International Conference on Distributed Computing, VLSI, Electrical Circuits and Robotics (DISCOVER), pp. 1-6. IEEE, 2019.
+							</li>
+							<li>
+								Sreekantha, D. K., Rodrigues Rhea Carmel Glen, M. K. Prajna, Sripada G. Mehandale, <u>Roline Stapny Saldanha</u>, and Gowda Jotsna Krishnappa. "Prediction of difficulties in Intubation using an Expert system." In 2019 IEEE International Conference on Distributed Computing, VLSI, Electrical Circuits and Robotics (DISCOVER), pp. 1-7. IEEE, 2019.
+							</li>
+						</ul>
+					</section>
+
+				<!-- Three -->
+					<section id="six">
 						<h2>Get In Touch</h2>
 						<p> I prefer to be contacted via email.</p>
 						<div class="row">
@@ -121,6 +205,8 @@
 							</div>
 						</div>
 					</section>
+
+
 
 				<!-- Four -->
 				<!--
@@ -451,9 +537,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<li><a href="https://www.linkedin.com/in/roline-stapny-saldanha/" class="icon brands fa-linkedin"><span class="label">LinkedIm</span></a></li>
 						
 					</ul>
-					<ul class="copyright">
-						Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					
 				</div>
 			</footer>
 
@@ -464,6 +548,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			
+			
+			<script>
+			$(document).ready(function () {
+            $("a.scrollLink").click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+            });
+        });
+			</script>
 	</body>
 </html>
