@@ -549,6 +549,7 @@ input, select, textarea {
 					box-sizing: border-box;
 				}
 
+
 				.row.gtr-uniform > * > :last-child {
 					margin-bottom: 0;
 				}
@@ -2041,7 +2042,7 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 0.35em;
+		
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -2053,7 +2054,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			background: url("images/overlay.png");
-			border-radius: 0.35em;
+			
 			content: '';
 			display: block;
 			height: 100%;
@@ -2073,7 +2074,7 @@ input, select, textarea {
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
-				border-radius: 0.35em;
+				
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
 				content: 'View';
@@ -2102,7 +2103,7 @@ input, select, textarea {
 			}
 
 		.image img {
-			border-radius: 0.35em;
+			
 			display: block;
 		}
 
@@ -2137,7 +2138,7 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			
 		}
 
 			.image.avatar:before {
@@ -2145,7 +2146,7 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
+				border-radius: 40%;
 				width: 100%;
 			}
 
@@ -2446,10 +2447,11 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		background-color: transparent;
+		background-color: #efefef; /*transparent;*/
 		border-radius: 0.35em;
-		border: solid 3px #efefef;
-		color: #787878 !important;
+		border: solid 3px black;
+		/*color: #787878 !important;*/
+		color: black;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2992,8 +2994,39 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 11pt;
 			}
+			#header{
+				margin-top: 0px;
+				padding-top: 20px;
+
+			}
+
+
+			#footer .copyright li {
+				border-left-width: 0;
+				display: block;
+				line-height: 2.25em;
+				margin-left: 0;
+				padding-left: 0;
+
+				
+			}
+			#header > .inner {
+					margin-bottom: 10px;
+					padding-bottom: 20px;
+					height: 100%;
+				}
+				#footer {
+					padding-top:10px;
+				}
+
+			#main {
+				
+				padding: 6em 3em 3em 3em;
+				
+			}
+
 
 	}
 
@@ -3006,10 +3039,12 @@ input, select, textarea {
 			#header {
 				padding: 6em 3em 3em 3em;
 				width: 30%;
+				margin-top: 0px;
+				padding-top: 10px;
 			}
 
 				#header h1 {
-					font-size: 1.25em;
+					font-size: 1em;
 				}
 
 					#header h1 br {
@@ -3017,7 +3052,7 @@ input, select, textarea {
 					}
 
 				#header > .inner {
-					margin-bottom: 0;
+					margin-bottom: 20px;
 				}
 
 		/* Footer */
