@@ -2999,6 +2999,7 @@ input, select, textarea {
 			#header{
 				margin-top: 0px;
 				padding-top: 20px;
+				
 
 			}
 
@@ -3018,6 +3019,8 @@ input, select, textarea {
 					height: 100%;
 				}
 				#footer {
+
+
 					padding-top:10px;
 				}
 
