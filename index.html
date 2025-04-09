@@ -11,7 +11,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	
+		<style>
+			.profile-image {
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				border: 3px solid #ffffff;
+				box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			}
+			.experience-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+				gap: 2rem; /* Space between columns */
+				margin: 2rem 0;
+			}
 		
+			.experience-card {
+				padding: 1rem;
+				background: #f8f8f8;
+				border-radius: 8px;
+			}
+		
+			.experience-card img {
+				width: 100%;
+				max-height: 200px;
+				object-fit: cover;
+				border-radius: 4px;
+			}
+		
+			.experience-card p {
+				text-align: justify;
+				margin-top: 1rem;
+			}
+		
+			/* Responsive design for mobile */
+			@media screen and (max-width: 768px) {
+				.experience-grid {
+					grid-template-columns: 1fr; /* Stack on mobile */
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		
@@ -19,15 +58,17 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="images/w1.jpg" class="image avatar" style="width: 100%" > <img src="images/w1.jpg" alt="" /></a>
-					<h1>Howdy, I am <strong> Roline Stapny Saldanha</strong>, <br />studying Masters in Computer Science at Texas A&M University, College Station, Graduating in May 2021</h1>
-					
-						
+					<a href="images/profilePicture.jpg" > <img src="images/profilePicture.jpg" alt="" class="profile-image"  /></a>
+					<h1>Howdy, I am <strong> Roline Stapny Saldanha</strong>, <br />Software Engineer II at Amazon, MS in Computer science and Engineering Management, IEEE-published researcher, and global tech awards judge.</h1>
+						<br>
 							<h2>
 							<ul class="navbar-nav" style="list-style: none;" >
 
 								<li class="nav-item">
-									<a  href="#one" class="scrollLink">About Me </a>
+									<a  href="#AboutMe" class="scrollLink">About Me </a>
+								</li>
+								<li class="nav-item">
+									<a  href="#amazon-experience" class="scrollLink">Work Experience </a>
 								</li>
 								<li>
 									<a  href="#two" class="scrollLink">Projects</a>
@@ -58,46 +99,76 @@
 			<div id="main">
 
 				<!-- One -->
-					<section id="one">
+					<section id="AboutMe">
 						<header class="major">
 							<h2>About me.</h2>
 						</header>
-						
-						<p>I am Roline Stapny Saldanha, studying Masters in Computer Science at Texas A&M University (4.0/4.0), College Station. I will graduate in May 2021. I have completed Bachelor of Engineering in Computer Science (9.56/10) at VTU, India.</p>
 
 						<p>
-							 I am passionate about Software Development and I like coding in Python. I worked as a Back-End at Goldman Sachs this summer. My coursework includes Information Storage and Retrieval, Artificial Intelligence, Analysis of Algorithms, Deep Learning, Pattern Recognition, Software Engineering, Distributed Systems, and Cloud Computing and Secure Computer Systems.
-							 
-							 I have done research work in using Machine Learning and Computer Vision to solve healthcare problems
+							I'm a Software Development Engineer II at Amazon, where I lead impactful innovations in AI/ML service integration. I have also contributed to global microservices scalability for the Amazon Luna team. With over four years of experience in high-growth, mission-critical environments, I bring together technical excellence with a strong focus on customer experience and product quality.
+						</p>
+						<p>
+							I earned my Master’s degree in Computer Science from Texas A&M University with a GPA of 3.9, after completing my Bachelor's in Computer Science from N.M.A.M. Institute of Technology, where I graduated with distinction. I am currently pursing Master in Engineering Management at Trine University.
+						</p>
+						<p>
+							At Amazon, I've designed and implemented scalable solutions like an automated accounting system for third-party revenue sharing and a feature that prevented nearly 800 duplicate game purchases within two weeks of launch. My work has directly supported Luna’s international expansion and GDPR compliance, processing over 21,000 data requests daily.
+						</p>
+						<p>
+							Outside of my core role, I’m a published researcher in machine learning for healthcare, with work presented at IEEE conferences. I also serve as a judge for global awards such as the Globee Awards and the Artificial Intelligence Excellence Awards, which has been a great way to stay connected to the broader tech community.
+						</p>
+						<p>
+							I'm passionate about mentorship and love supporting the next generation of engineers at Amazon. I love to contribute at women in tech community. I thrive on building innovative, high-quality software that scales globally and makes a meaningful impact.
 						</p>
 
-						<p>
-							I am looking for Winter/Spring 2021 internships and New Grad (June 2021) positions in Software Development or Machine Learning field. I dream to be a part of Tech organizations that solve challenging tasks through innovation.
-						</p>
 						<ul class="actions">
-							<li><a href="media/Roline_resume.pdf" class="button" >Resume</a></li>
+							<li><a href="media/Roline_Stapny_Resume_2025.pdf" class="button" >Resume</a></li>
 						</ul>
-						<!--<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>-->
 					</section>
 
-					<section id = "internship">
-						<h2> Internship </h2>
 
-						
-						<div>
-							
-							<div >
-								<a href="https://www.linkedin.com/feed/update/urn:li:activity:6699137155899437056/"> <img src="images/Marcus-by-Goldman-Sachs-Review.png" height= "200px" alt="Goldman Sachs" /> </a>
+					<section id="amazon-experience">
+						<header class="main">
+							<h2>Work Experience</h2>
+						</header>
+					
+						<div class="experience-grid">
+							<!-- Amazon Experience -->
+							<div class="experience-card">
+								<img src="images/amazon_logo.png" alt="Amazon" />
+								<p>
+									<i>Software Developement Engineer (4 years), Seattle</i>
+								</p>
+		
+								<p>
+									I have nearly four years of experience at Amazon, with over three of those on the Amazon Luna team. 
+									I've had the opportunity to be part of Luna's journey from its early stages through its launch in 
+									the US, Canada, and multiple EU countries. My work focused on enhancing the payment experience, 
+									managing customer entitlements, and ensuring seamless access to third-party content—all key to 
+									creating a smooth and trusted gaming experience for our customers.  <br>
+									Currently, I'm part of the Customer Experience organization, where I work on benchmarking AI/ML 
+									services to help improve service performance, reliability, and intelligence across the board. 
+									My role allows me to drive innovation at the intersection of user experience and cutting-edge 
+									technology, helping shape scalable, global systems that prioritize quality and customer satisfaction.
+								</p>
 							</div>
-							<div align="justify" >
-								<i>Interned at Marcus Cloud Infrastructure team at Goldman Sachs, Richardson, TX. </i>
-							<br>
-							During this internship I built the entire back-end of ECS Dashboard application. This application helped the cloud engineers at Goldman Sachs to quickly view the anomalies in ECS services. I created 3 APIs in Python using Boto3 and Flask. I also learnt about CI/CD pipeline and Containerizing the application using Docker. The entire application was completed within 4 weeks.</div>
+					
+							<!-- Goldman Sachs Experience -->
+							<div class="experience-card">
+								<a href="https://www.linkedin.com/feed/update/urn:li:activity:6699137155899437056/">
+									<img src="images/Marcus-by-Goldman-Sachs-Review.png" alt="Goldman Sachs" />
+								</a>
+								<p>
+									<i>Interned at Marcus Cloud Infrastructure team at Goldman Sachs, Richardson, TX.</i>
+								</p>
+								<p>
+									During this internship I built the entire back-end of ECS Dashboard application. This application 
+									helped the cloud engineers at Goldman Sachs to quickly view the anomalies in ECS services. I created 
+									3 APIs in Python using Boto3 and Flask. I also learnt about CI/CD pipeline and Containerizing the 
+									application using Docker. The entire application was completed within 4 weeks.
+								</p>
+							</div>
 						</div>
 					</section>
-
 					
 
 				<!-- Two -->
@@ -145,40 +216,29 @@
 						<h2>Skills</h2>
 						<ul >
 							<li>
-								<u style="color: black"> Languages: </u> Python, Java, C++, C, HTML, CSS, PHP, MySQL, Android, JavaScript.
+								<u style="color: black"> Languages: </u> Python, Java, TypeScript.
 							</li>
 							<li>
-								<u style="color: black"> Other Skills: </u> Machine Learning(scikit learn, Numpy, Pandas, Tensorflow), Android Programming, GIT, Flask, AWS.
+								<u style="color: black"> Other Skills: </u> AWS, Machine Learning(scikit learn, Numpy, Pandas, Tensorflow), Docker, GIT, Flask, Agile.
 							</li>
-							<li>
-								<u style="color: black"> Coursework: </u> Deep Learning, Artificial Intelligence, Distributed Systems and Cloud Computing(Spark basics), Information Storage and Retrieval, Analysis of Algorithms, Software Engineering, Pattern Recognition, Secure Computer Systems.
-							</li>
-
 						</ul>
-						
-
-						
 					</section>
 
 					<section  id="four" >
 						<h2>Other Experiences</h2>
 						<ul>
 							<li>
-								Finalist in TAMIDS Data Science Competition 2020.
+								Judged Globee Awards 2025 – https://credential.globeeawards.com/profile/rolinestapnysaldanha884602/wallet.
+							</li>
+							<li>
+								Judge Artificial Intelligence Excellence Award 2025 - https://www.bintelligence.com/judge/roline-stapny-saldanha.
+							</li>
+							<li>
+								Attended Grace Hopper Conference 2024 in Philadelphia
 							</li>
 							<li>
 								Graduate Vice President of AWICS(Aggie Women in Computer Science club) for the year 2020-2021.
 							</li>
-							<li>
-								Tapia 2020 and Grace hopper 2020 Scholarship Awardee.
-							</li>
-							<li>
-								Project of the Year Award in Expro 2019:Won third best project of the year award in the Computer Science Department.
-							</li>
-							<li>
-								Completed the “Core Java with Android” Certification course by HPE Education Service.
-							</li>
-
 						</ul>
 
 					</section >
@@ -203,22 +263,10 @@
 							
 							<div class="col-4 col-12-small"  style="width: 100%">
 								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										4302 College Main St, Apt 318 <br/> Bryan.<br />
-										 TX 77801<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										979-709-3361
-									</li>
+
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">rolinestapny@gmail.com</a>
-										<br/>
-										<a href="#">roline_stapny@tamu.edu</a>
-									</li>
+										<a href="mailto:rolineshirva@gmail.com">rolineshirva@gmail.com</a>									</li>
 									<li>
 										<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
 										<a href="https://www.linkedin.com/in/roline-stapny-saldanha/">linkedin.com/in/roline-stapny-saldanha/</a>
@@ -234,327 +282,6 @@
 							</div>
 						</div>
 					</section>
-
-
-
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
 			</div>
 
 		<!-- Footer -->
@@ -566,8 +293,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<li><a href="https://github.com/Roline-Stapny" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.linkedin.com/in/roline-stapny-saldanha/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li>
-							
-							<a href="media/Roline_resume.pdf"  class="far fa-file-alt"><span class="label">Resume</span></a>
+							<a href="media/Roline_Stapny_Resume_2025.pdf"  class="far fa-file-alt"><span class="label">Resume</span></a>
 						</li>
 						
 					</ul>

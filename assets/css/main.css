@@ -100,11 +100,11 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #737171;
+		color: #0e0d0d;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
-		line-height: 1.75em;
+		line-height: 1.5em;
 	}
 
 	a {
@@ -2449,7 +2449,7 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: #efefef; /*transparent;*/
 		border-radius: 0.35em;
-		border: solid 3px black;
+		border: solid 1px black;
 		/*color: #787878 !important;*/
 		color: black;
 		cursor: pointer;
@@ -2609,7 +2609,11 @@ input, select, textarea {
 		position: fixed;
 		text-align: center;
 		top: 0;
+<<<<<<< HEAD
 		width: 35%;
+=======
+		width: 30em;
+>>>>>>> 317ee0d (Updated Profile - 2025)
 	}
 
 		#header > * {
@@ -2690,16 +2694,15 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
-		max-width: 54em;
-		padding: 8em 4em 4em 4em;
-		width: calc(100% - 35%);
+		margin-left: 30em;
+		padding: 4em 4em 4em 4em;
+		width: calc(100% - 30em);
 	}
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 1em 0 0 0;
 
 		}
 
@@ -3026,7 +3029,7 @@ input, select, textarea {
 
 			#main {
 				
-				padding: 6em 3em 3em 3em;
+				padding: 3em 3em 3em 3em;
 				
 			}
 
