@@ -2609,11 +2609,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: center;
 		top: 0;
-<<<<<<< HEAD
-		width: 35%;
-=======
 		width: 30em;
->>>>>>> 317ee0d (Updated Profile - 2025)
 	}
 
 		#header > * {
